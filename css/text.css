@@ -1,0 +1,45 @@
+.cabecera{
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Segoe UI';
+    background-image: linear-gradient(45deg, #3D0044, #002A99 );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+}
+.cabecera2{
+    position: relative;
+    bottom: 0;
+    font-family: 'Segoe UI';
+    background-image: linear-gradient(45deg, #002A99, #3D0044 );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+.cabecera3{
+    position: relative;
+    margin: 0;
+    font-family: 'Segoe UI';
+    background-image: linear-gradient(45deg, #002A99, #3D0044 );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+#siglas{
+    font-size: 5.3vw;
+}
+#titulo1{
+    font-size: 2vw;
+}

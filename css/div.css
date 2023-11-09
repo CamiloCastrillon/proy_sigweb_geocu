@@ -1,0 +1,52 @@
+.cont_central{
+    position: relative;
+    width: 65vw;
+    height: 100vh;
+    margin: auto;
+    background-color: white;
+}
+.cont_fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #7300BB7A;
+    backdrop-filter: blur(5px);
+    z-index: -1
+}
+.cont_cabecera{
+    position: absolute;
+    width: 65vw;
+    height: 7.5vw;
+    border: solid 1px black
+}
+.cont_siglas{
+    position: absolute;
+    width: 18vw;
+    height: 7.5vw
+}
+.cont_titulo1{
+    position: absolute;
+    left: 18vw;
+    width: 25vw;
+    height: 3.75vw;
+}
+.cont_titulo2{
+    position: absolute;
+    left: 18vw;
+    top: 3.75vw;
+    width: 25vw;
+    height: 3.75vw;
+}
+.cont_logo{
+    position: absolute;
+    width: 7.5vw;
+    height: 7.5vw;
+}
+#cont_logo_1{
+    right: 1vw;
+}
+#cont_logo_2{
+    right: 8.5vw;
+}
