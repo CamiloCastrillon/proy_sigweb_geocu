@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/div.css">
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/but.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 
 </head>
 <body>
@@ -30,6 +39,27 @@
             </div>
             <div class = "cont_titulo2">
                 <h1 class = "cabecera3" id="titulo1">La Union Valle</h1>
+            </div>
+        </div>
+        <div class = "cont_map" id = "map">
+            <script type="text/javascript" src="js/map.js"></script>
+        </div>
+        <div class = "cont_herramientas">
+            <button class = "btn_funcion" id = "btn_1">
+                <img src="media/icon_geov.png">
+            </button>
+            <button class = "btn_funcion" id = "btn_2">
+                <img src="media/icon_mapas.png">
+            </button>
+            <button class = "btn_funcion" id = "btn_3">
+                <img src="media/icon_geos.png">
+            </button>
+            <button class = "btn_funcion" id = "btn_4">
+                <img src="media/icon_meta.png">
+            </button>
+            <div class = "cont_salidas">
+                <p class = "p_intro" id = "intro_titulo">¡Bienvenido!</p>
+                <p class = "p_intro" id = "intro_parrafo">Arriba de este recuadro encuentras cuatro iconos que te brindan las funciones de consulta catastral, mapas temáticos, geoservicios y metadatos, respectivamente ¡Anímate a hacer clic en alguna!</p>
             </div>
         </div>
     </div>
