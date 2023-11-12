@@ -37,3 +37,41 @@
     top: 0;
     left: 75%;
 }
+.ver_mt_oculto{
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    transform: translateX(-900%);
+    transition: transform 0.5s ease;
+}
+.ver_mt{
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    color: white;
+    background-color: #FFFFFF00;;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.ver_mt:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+#ver_us{
+    top: 18%;
+    right: 35%;
+}
+#ver_gr{
+    top: 33%;
+    right: 35%;
+}
+#ver_bio{
+    top: 48%;
+    right: 35%;
+}
+#ver_cc{
+    top: 63%;
+    right: 35%;
+}

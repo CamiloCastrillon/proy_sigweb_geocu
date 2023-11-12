@@ -19,6 +19,8 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
 
+    <script src="js/funciones.js"></script>
+
 </head>
 <body>
     <div class = "cont_fondo"></div>
@@ -44,22 +46,36 @@
         <div class = "cont_map" id = "map">
             <script type="text/javascript" src="js/map.js"></script>
         </div>
-        <div class = "cont_herramientas">
-            <button class = "btn_funcion" id = "btn_1">
+        <div class = "cont_herramientas" id="id_cont_herramientas">
+            <button  onclick="muestra_consulta_catastral()" class = "btn_funcion" id = "btn_1">
                 <img src="media/icon_geov.png">
             </button>
-            <button class = "btn_funcion" id = "btn_2">
+            <button onclick="muestra_mapas_tematicos()" class = "btn_funcion" id = "btn_2">
                 <img src="media/icon_mapas.png">
             </button>
-            <button class = "btn_funcion" id = "btn_3">
+            <button onclick="muestra_geoservicios()" class = "btn_funcion" id = "btn_3">
                 <img src="media/icon_geos.png">
             </button>
-            <button class = "btn_funcion" id = "btn_4">
+            <button onclick="muestra_metadatos()" class = "btn_funcion" id = "btn_4">
                 <img src="media/icon_meta.png">
             </button>
-            <div class = "cont_salidas">
+            <div class = "cont_salidas" id="salidas_intro">
                 <p class = "p_intro" id = "intro_titulo">¡Bienvenido!</p>
                 <p class = "p_intro" id = "intro_parrafo">Arriba de este recuadro encuentras cuatro iconos que te brindan las funciones de consulta catastral, mapas temáticos, geoservicios y metadatos, respectivamente ¡Anímate a hacer clic en alguna!</p>
+                <p class = "p_titulo_herramienta_oculto" id = "consulta_catastral">Consulta catastral</p>
+                <p class = "p_titulo_herramienta_oculto" id = "mapas_tematicos">Mapas temáticos</p>
+                <p class = "p_titulo_herramienta_oculto" id = "geoservicios">Geoservicios</p>
+                <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
+
+                <p class = "p_mapas_tematicos_oculto" id = "uso_suelo">Uso del suelo</p>
+                <p class = "p_mapas_tematicos_oculto" id = "gestion_riesgo">Gestión de riesgo</p>
+                <p class = "p_mapas_tematicos_oculto" id = "biodiversidad">Biodiversidad</p>
+                <p class = "p_mapas_tematicos_oculto" id = "cambio_climatico">Cambio climático</p>
+
+                <button class = "ver_mt_oculto" id = "ver_us">Ver</button>
+                <button class = "ver_mt_oculto" id = "ver_gr">Ver</button>
+                <button class = "ver_mt_oculto" id = "ver_bio">Ver</button>
+                <button class = "ver_mt_oculto" id = "ver_cc">Ver</button>
             </div>
         </div>
     </div>

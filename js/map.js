@@ -11,3 +11,10 @@ var mapa_base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z
     minZoom: 12,
 	maxZoom: 16
 }).addTo(map);
+
+var wms_divipol = L.tileLayer.wms('https://www.geo.cvc.gov.co/arcgis/services/CARTO_BASICA/Division_politica/MapServer/WMSServer?request=GetCapabilities&service=WMS', {
+    layers: 'NOMBRE_DE_LA_CAPA_WMS',
+    format: 'image/png',
+    transparent: true,
+    attribution: 'Atribución del WMS'
+}).addTo(map);

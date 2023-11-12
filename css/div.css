@@ -81,4 +81,9 @@
     min-width: 275px;
     background-image: linear-gradient(0deg,#3D0044,#7300BB );
     border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

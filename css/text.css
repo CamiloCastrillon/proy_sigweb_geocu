@@ -44,6 +44,13 @@
     font-size: 2vw;
 }
 .p_intro{
+    position: absolute;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.texto_intro_oculto {
     position: relative;
     margin: 0 auto;
     font-family: 'Segoe UI';
@@ -52,14 +59,62 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transform: translateX(-300%);
+    transition: transform 0.5s ease;
 }
 #intro_titulo{
-    top: 16%;
+    top: 10%;
     font-size: 3vw;
 }
 #intro_parrafo{
-    top: 22%;
+    top: 30%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 1.5vw;
+}
+.p_titulo_herramienta_oculto{
+    position: absolute;
+    top: 2%;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(-300%);
+    transition: transform 0.5s ease;
+}
+.p_titulo_herramienta{
+    position: absolute;
+    top: 2%;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+.p_mapas_tematicos_oculto{
+    position: absolute;
+    left: 5%;
+    text-align: left;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(-300%);
+    transition: transform 0.5s ease;
+}
+.p_mapas_tematicos{
+    position: absolute;
+    left: 5%;
+    text-align: left;
+    font-family: 'Segoe UI';
+    color: white;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+#uso_suelo{
+   top: 15%; 
+}
+#gestion_riesgo{
+    top: 30%
+}
+#biodiversidad{
+    top: 45%
+}
+#cambio_climatico{
+    top: 60%
 }
