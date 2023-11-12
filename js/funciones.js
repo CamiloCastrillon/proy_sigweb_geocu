@@ -16,6 +16,8 @@ function muestra_consulta_catastral() {
     var bt_ver_bio = document.getElementById('ver_bio');
     var bt_ver_cc = document.getElementById('ver_cc');
     
+    var cont_gs = document.getElementById('cont_gs');
+
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
     texto2.classList.replace('p_intro', 'texto_intro_oculto');
     texto3.classList.replace('p_titulo_herramienta_oculto', 'p_titulo_herramienta');
@@ -32,6 +34,8 @@ function muestra_consulta_catastral() {
     bt_ver_gr.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_bio.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_cc.classList.replace('ver_mt', 'ver_mt_oculto');
+
+    cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
 }
 
 function muestra_mapas_tematicos() {
@@ -52,6 +56,8 @@ function muestra_mapas_tematicos() {
     var bt_ver_bio = document.getElementById('ver_bio');
     var bt_ver_cc = document.getElementById('ver_cc');
     
+    var cont_gs = document.getElementById('cont_gs');
+    
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
     texto2.classList.replace('p_intro', 'texto_intro_oculto');
@@ -70,6 +76,7 @@ function muestra_mapas_tematicos() {
     bt_ver_bio.classList.replace('ver_mt_oculto', 'ver_mt');
     bt_ver_cc.classList.replace('ver_mt_oculto', 'ver_mt');
     
+    cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
 }
 
 function muestra_geoservicios() {
@@ -90,6 +97,8 @@ function muestra_geoservicios() {
     var bt_ver_bio = document.getElementById('ver_bio');
     var bt_ver_cc = document.getElementById('ver_cc');
 
+    var cont_gs = document.getElementById('cont_gs');
+
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
     texto2.classList.replace('p_intro', 'texto_intro_oculto');
@@ -107,6 +116,8 @@ function muestra_geoservicios() {
     bt_ver_gr.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_bio.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_cc.classList.replace('ver_mt', 'ver_mt_oculto');
+
+    cont_gs.classList.replace('cont_gs_oculto', 'cont_gs');
 }
 
 function muestra_metadatos() {
@@ -127,6 +138,8 @@ function muestra_metadatos() {
     var bt_ver_bio = document.getElementById('ver_bio');
     var bt_ver_cc = document.getElementById('ver_cc');
 
+    var cont_gs = document.getElementById('cont_gs');
+
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
     texto2.classList.replace('p_intro', 'texto_intro_oculto');
@@ -144,4 +157,6 @@ function muestra_metadatos() {
     bt_ver_gr.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_bio.classList.replace('ver_mt', 'ver_mt_oculto');
     bt_ver_cc.classList.replace('ver_mt', 'ver_mt_oculto');
+
+    cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
 }

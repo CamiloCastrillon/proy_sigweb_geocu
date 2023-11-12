@@ -75,3 +75,128 @@
     top: 63%;
     right: 35%;
 }
+.cop_gs{
+    height: 2vw;
+    width: 5vw;
+    max-height: 20px;
+    max-width: 40px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.cop_gs:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+#wms_zr{
+    top: 12%;
+    left: 59%;
+}
+#wfs_zr{
+    top: 12%;
+    left: 79%;
+}
+#wms_zu{
+    top: 18%;
+    left: 59%;
+}
+#wfs_zu{
+    top: 18%;
+    left: 79%;
+}
+#wms_ter{
+    top: 24%;
+    left: 59%;
+}
+#wfs_ter{
+    top: 24%;
+    left: 79%;
+}
+#wms_con{
+    top: 30%;
+    left: 59%;
+}
+#wfs_con{
+    top: 30%;
+    left: 79%;
+}
+#wms_re{
+    top: 44%;
+    left: 59%;
+}
+#wfs_re{
+    top: 44%;
+    left: 79%;
+}
+#wms_ap{
+    top: 50%;
+    left: 59%;
+}
+#wfs_ap{
+    top: 50%;
+    left: 79%;
+}
+#wms_ec{
+    top: 56%;
+    left: 59%;
+}
+#wfs_ec{
+    top: 56%;
+    left: 79%;
+}
+#wms_eh{
+    top: 70%;
+    left: 59%;
+}
+#wfs_eh{
+    top: 70%;
+    left: 79%;
+}
+#wms_pt{
+    top: 76%;
+    left: 59%;
+}
+#wfs_pt{
+    top: 76%;
+    left: 79%;
+}
+#wms_h{
+    top: 83%;
+    left: 59%;
+}
+#wfs_h{
+    top: 83%;
+    left: 79%;
+}
+#wms_us{
+    top: 97%;
+    left: 59%;
+}
+#wfs_us{
+    top: 97%;
+    left: 79%;
+}
+#wms_in{
+    top: 111%;
+    left: 59%;
+}
+#wfs_in{
+    top: 111%;
+    left: 79%;
+}
+#wms_za{
+    top: 117%;
+    left: 59%;
+}
+#wfs_za{
+    top: 117%;
+    left: 79%;
+}
