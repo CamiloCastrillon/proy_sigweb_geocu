@@ -1,8 +1,8 @@
 .btn_funcion{
     position: absolute;
-    width: 25%;
+    width: 5vw;
     min-width: 68px;
-    height: 5%;
+    height: 5vw;
     min-height: 68px;
     border-radius: 9px;
     border: solid 1px #FFFFFF00;
@@ -37,20 +37,21 @@
     top: 0;
     left: 75%;
 }
-.ver_mt_oculto{
-    position: absolute;
-    border: solid 0.5px white;
-    border-radius: 0.2vw;
-    font-family: 'Segoe UI';
-    transform: translateX(-900%);
-    transition: transform 0.5s ease;
-}
 .ver_mt{
+    right: 7%;
+    height: 2vw;
+    max-height: 20px;
+    width: 8vw;
+    max-width: 80px;
     position: absolute;
     border: solid 0.5px white;
     border-radius: 0.2vw;
     font-family: 'Segoe UI';
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #FFFFFF00;;
     transform: translateX(0%);
     transition: transform 0.5s ease;
@@ -59,21 +60,23 @@
     background-color: white;
     color: #7300BB7A;
 }
-#ver_us{
-    top: 18%;
-    right: 35%;
+#ver_ap{
+    top: 70%;
 }
-#ver_gr{
-    top: 33%;
-    right: 35%;
+#ver_ec{
+    top: 78%;
 }
-#ver_bio{
-    top: 48%;
-    right: 35%;
+#ver_re{
+    top: 86%;
 }
-#ver_cc{
-    top: 63%;
-    right: 35%;
+#ver_h{
+    top: 100%;
+}
+#ver_hi{
+    top: 108%;
+}
+#ver_pt{
+    top: 116%;
 }
 .cop_gs{
     height: 2vw;

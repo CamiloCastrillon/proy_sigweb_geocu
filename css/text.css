@@ -43,6 +43,14 @@
 #titulo1{
     font-size: 2vw;
 }
+.t_leyenda{
+    position: absolute;
+    font-size: 150%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
 .p_intro{
     position: absolute;
     font-family: 'Segoe UI';
@@ -88,18 +96,10 @@
     transform: translateX(0%);
     transition: transform 0.5s ease;
 }
-.p_mapas_tematicos_oculto{
-    position: absolute;
-    left: 5%;
-    text-align: left;
-    font-family: 'Segoe UI';
-    color: white;
-    transform: translateX(-300%);
-    transition: transform 0.5s ease;
-}
 .p_mapas_tematicos{
     position: absolute;
     left: 5%;
+    font-size: 90%;
     text-align: left;
     font-family: 'Segoe UI';
     color: white;
@@ -107,16 +107,47 @@
     transition: transform 0.5s ease;
 }
 #uso_suelo{
-   top: 15%; 
+   top: 0%; 
 }
 #gestion_riesgo{
     top: 30%
 }
 #biodiversidad{
-    top: 45%
+    top: 60%
 }
 #cambio_climatico{
-    top: 60%
+    top: 90%
+}
+.p_capa_tematica{
+    position: absolute;
+    margin: 0;
+    font-size: 75%;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#p_bio_ap{
+    top: 70%;
+    left: 15%; 
+}
+#p_bio_ec{
+    top: 78%;
+    left: 15%; 
+}
+#p_bio_re{
+    top: 86%;
+    left: 15%; 
+}
+#p_bio_h{
+    top: 100%;
+    left: 15%; 
+}
+#p_bio_hi{
+    top: 108%;
+    left: 15%; 
+}
+#p_bio_pt{
+    top: 116%;
+    left: 15%; 
 }
 .titulo_gs{
     position: absolute;

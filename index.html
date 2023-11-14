@@ -19,7 +19,14 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
 
-    <script src="js/funciones.js"></script>
+    <script type = "text/javascript" src="js/slide_tool.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/areas_protegidas.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/ecosistema.js"></script>
+    <script type = "text/javascript" src="js/biodiversidad/registro_especies.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/est_red_h.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/est_red_h.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/humedad.js"></script>
+    <script type = "text/javascript" src="js/cambio_climatico/piso_termico.js"></script>
 
 </head>
 <body>
@@ -45,6 +52,13 @@
         </div>
         <div class = "cont_map" id = "map">
             <script type="text/javascript" src="js/map.js"></script>
+            <script type = "text/javascript" src="js/mapas_tematicos.js"></script>
+            <div class = "cont_ley_oculto" id="leyenda_ec">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
+            <div class = "cont_ley_oculto" id="leyenda_re">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
         </div>
         <div class = "cont_herramientas" id="id_cont_herramientas">
             <button  onclick="muestra_consulta_catastral()" class = "btn_funcion" id = "btn_1">
@@ -60,22 +74,32 @@
                 <img src="media/icon_meta.png">
             </button>
             <div class = "cont_salidas" id="salidas_intro">
-                <p class = "p_intro" id = "intro_titulo">¡Bienvenido!</p>
-                <p class = "p_intro" id = "intro_parrafo">Arriba de este recuadro encuentras cuatro iconos que te brindan las funciones de consulta catastral, mapas temáticos, geoservicios y metadatos, respectivamente ¡Anímate a hacer clic en alguna!</p>
-                <p class = "p_titulo_herramienta_oculto" id = "consulta_catastral">Consulta catastral</p>
-                <p class = "p_titulo_herramienta_oculto" id = "mapas_tematicos">Mapas temáticos</p>
-                <p class = "p_titulo_herramienta_oculto" id = "geoservicios">Geoservicios</p>
-                <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
+                    <p class = "p_intro" id = "intro_titulo">¡Bienvenido!</p>
+                    <p class = "p_intro" id = "intro_parrafo">Arriba de este recuadro encuentras cuatro iconos que te brindan las funciones de consulta catastral, mapas temáticos, geoservicios y metadatos, respectivamente ¡Anímate a hacer clic en alguna!</p>
+                    <p class = "p_titulo_herramienta_oculto" id = "consulta_catastral">Consulta catastral</p>
+                    <p class = "p_titulo_herramienta_oculto" id = "mapas_tematicos">Mapas temáticos</p>
+                    <p class = "p_titulo_herramienta_oculto" id = "geoservicios">Geoservicios</p>
+                    <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
 
-                <p class = "p_mapas_tematicos_oculto" id = "uso_suelo">Uso del suelo</p>
-                <p class = "p_mapas_tematicos_oculto" id = "gestion_riesgo">Gestión de riesgo</p>
-                <p class = "p_mapas_tematicos_oculto" id = "biodiversidad">Biodiversidad</p>
-                <p class = "p_mapas_tematicos_oculto" id = "cambio_climatico">Cambio climático</p>
+                <div class = "cont_mt_oculto" id = "cont_mt">
+                    <p class = "p_mapas_tematicos" id = "uso_suelo">Uso del suelo</p>
+                    <p class = "p_mapas_tematicos" id = "gestion_riesgo">Gestión de riesgo</p>
+                    <p class = "p_mapas_tematicos" id = "biodiversidad">Biodiversidad</p>
+                    <p class = "p_capa_tematica" id = "p_bio_ap">Áreas protegidas</p>
+                    <p class = "p_capa_tematica" id = "p_bio_ec">Ecosistemas</p>
+                    <p class = "p_capa_tematica" id = "p_bio_re">Regístro de especies</p>
+                    <p class = "p_capa_tematica" id = "p_bio_h">Hidroclimatología</p>
+                    <p class = "p_capa_tematica" id = "p_bio_hi">Humedad</p>
+                    <p class = "p_capa_tematica" id = "p_bio_pt">Piso térmico</p>
+                    <p class = "p_mapas_tematicos" id = "cambio_climatico">Cambio climático</p>
 
-                <button class = "ver_mt_oculto" id = "ver_us">Ver</button>
-                <button class = "ver_mt_oculto" id = "ver_gr">Ver</button>
-                <button class = "ver_mt_oculto" id = "ver_bio">Ver</button>
-                <button class = "ver_mt_oculto" id = "ver_cc">Ver</button>
+                    <button class = "ver_mt" id = "ver_ap" onclick="ver_ap()">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_ec" onclick="ver_ec()">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_re" onclick="ver_re()">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_h">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_hi">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_pt">Ver/Ocultar</button>
+                </div>
 
                 <div class = "cont_gs_oculto" id = "cont_gs">
                     <p class = "titulo_gs" id="wms">WMS</p>
