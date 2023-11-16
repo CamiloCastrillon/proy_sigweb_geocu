@@ -60,23 +60,88 @@
             <script type="text/javascript" src="js/map.js"></script>
             <script type = "text/javascript" src="js/mapas_tematicos.js"></script>
             <script type = "text/javascript" src="js/catastro.js"></script>
+            <button class = "ver_conv" onclick="muestra_conv()">
+                <img src="media/f_conv.png" id="img_conv">
+            </button>
+            <div class = "cont_conv_oculto" id = "conv">
+                <p class = "t_conv">Convenciones</p>
+                <div class = "icon_conv" id="conv_terrenos"></div>
+                <div class = "icon_conv" id="conv_manzanas"></div>
+                <div class = "icon_conv" id="conv_constru"></div>
+                <div class = "icon_conv" id="vereda1"></div>
+                <div class = "icon_conv" id="vereda2"></div>
+                <div class = "icon_conv" id="vereda3"></div>
+                <div class = "icon_conv" id="vereda4"></div>
+                <div class = "icon_conv" id="vereda5"></div>
+                <div class = "icon_conv" id="vereda6"></div>
+                <div class = "icon_conv" id="vereda7"></div>
+
+                <p class = "td_conv" id = "t_terreno">Terrenos</p>
+                <p class = "td_conv" id = "t_manzana">Manzanas</p>
+                <p class = "td_conv" id = "t_constru">Construcciones</p>
+                <p class = "td_conv" id = "t_vereda">Veredas</p>
+                <p class = "td_conv" id = "t_vereda1">Cabecera MPAL.</p>
+                <p class = "td_conv" id = "t_vereda2">El lindero</p>
+                <p class = "td_conv" id = "t_vereda3">Quebrada grande</p>
+                <p class = "td_conv" id = "t_vereda4">La despensa</p>
+                <p class = "td_conv" id = "t_vereda5">Corcega</p>
+                <p class = "td_conv" id = "t_vereda6">La aguada</p>
+                <p class = "td_conv" id = "t_vereda7">San Luis</p>
+
+            </div>
             <div class = "cont_ley_oculto" id="leyenda_ap">
                 <p class = "t_leyenda">Leyenda</p>
+                <div class = "icon_conv" id="i_ap"></div>
+                <p class = "td_conv" id = "t_ap">Áreas protegidas</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_ec">
                 <p class = "t_leyenda">Leyenda</p>
+                <div class = "icon_conv" id="i_ec1"></div>
+                <div class = "icon_conv" id="i_ec2"></div>
+                <div class = "icon_conv" id="i_ec3"></div>
+                <div class = "icon_conv" id="i_ec4"></div>
+                <div class = "icon_conv" id="i_ec5"></div>
+                <div class = "icon_conv" id="i_ec6"></div>
+
+                <p class = "td_conv" id = "t_ec1">Bosque frio humedo en montana fluvio-gravitacional</p>
+                <p class = "td_conv" id = "t_ec2">Arbustales y matorrales medio muy seco en montana fluvio-gravitacional</p>
+                <p class = "td_conv" id = "t_ec3">Bosque calido seco en lomerio fluvio-lacustre</p>
+                <p class = "td_conv" id = "t_ec4">Bosque medio humedo en montana fluvio-gravitacional</p>
+                <p class = "td_conv" id = "t_ec5">Bosque calido seco en planicie aluvial</p>
+                <p class = "td_conv" id = "t_ec6">Bosque calido seco en piedemonte aluvial</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_re">
                 <p class = "t_leyenda">Leyenda</p>
+                <div class = "icon_conv_c" id="i_re1"></div>
+                <div class = "icon_conv_c" id="i_re2"></div>
+
+                <p class = "td_conv" id = "t_re1">Animales</p>
+                <p class = "td_conv" id = "t_re2">Plantas</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_eh">
                 <p class = "t_leyenda">Leyenda</p>
+                <img src="media/est_h.png" id = "i_eh">
+                <p class = "td_conv" id = "t_eh">Estaciones Hidroclimatológicas</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_hu">
                 <p class = "t_leyenda">Leyenda</p>
+                <div class = "icon_conv" id="i_hu1"></div>
+                <div class = "icon_conv" id="i_hu2"></div>
+                <div class = "icon_conv" id="i_hu3"></div>
+
+                <p class = "td_conv" id = "t_hu1">Muy seco</p>
+                <p class = "td_conv" id = "t_hu2">Seco</p>
+                <p class = "td_conv" id = "t_hu3">Húmedo</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_pt">
                 <p class = "t_leyenda">Leyenda</p>
+                <div class = "icon_conv" id="i_pt1"></div>
+                <div class = "icon_conv" id="i_pt2"></div>
+                <div class = "icon_conv" id="i_pt3"></div>
+
+                <p class = "td_conv" id = "t_pt1">Cálido</p>
+                <p class = "td_conv" id = "t_pt2">Medio</p>
+                <p class = "td_conv" id = "t_pt3">Frio</p>
             </div>
 
         </div>

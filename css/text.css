@@ -261,3 +261,127 @@
     top: 35%;
     left: 35%; 
 }
+.t_conv{
+    position: absolute;
+    font-size: 150%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
+.td_conv{
+    position: absolute;
+    font-size: 100%;
+    top: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    color: #3D0044;
+}
+#t_terreno{
+    top: 15%;
+    left: 25%;
+}
+#t_manzana{
+    top: 22%;
+    left: 25%;
+}
+#t_constru{
+    top: 29%;
+    left: 25%;
+}
+#t_vereda{
+    top: 36%;
+    left: 5%;
+}
+#t_vereda1{
+    top: 44%;
+    left: 25%;
+}
+#t_vereda2{
+    top: 51%;
+    left: 25%;
+}
+#t_vereda3{
+    top: 58%;
+    left: 25%;
+}
+#t_vereda4{
+    top: 65%;
+    left: 25%;
+}
+#t_vereda5{
+    top: 72%;
+    left: 25%;
+}
+#t_vereda6{
+    top: 79%;
+    left: 25%;
+}
+#t_vereda7{
+    top: 86%;
+    left: 25%;
+}
+#t_ap{
+    top: 15%;
+    left: 25%;
+}
+#t_ec1{
+    top: 15%;
+    left: 25%;
+}
+#t_ec2{
+    top: 25%;
+    left: 25%;
+}
+#t_ec3{
+    top: 35%;
+    left: 25%;
+}
+#t_ec4{
+    top: 45%;
+    left: 25%;
+}
+#t_ec5{
+    top: 55%;
+    left: 25%;
+}
+#t_ec6{
+    top: 65%;
+    left: 25%;
+}
+#t_re1{
+    top: 15%;
+    left: 25%;
+}
+#t_re2{
+    top: 25%;
+    left: 25%;
+}
+#t_eh{
+    top: 15%;
+    left: 25%;
+}
+#t_hu1{
+    top: 15%;
+    left: 25%;
+}
+#t_hu2{
+    top: 25%;
+    left: 25%;
+}
+#t_hu3{
+    top: 35%;
+    left: 25%;
+}
+#t_pt1{
+    top: 15%;
+    left: 25%;
+}
+#t_pt2{
+    top: 25%;
+    left: 25%;
+}
+#t_pt3{
+    top: 35%;
+    left: 25%;
+}

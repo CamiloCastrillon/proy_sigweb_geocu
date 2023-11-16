@@ -104,3 +104,16 @@ function muestra_metadatos() {
     cont_md.classList.replace('cont_md_oculto', 'cont_md');
     cont_con.classList.replace('cont_con', 'cont_con_oculto');
 }
+
+let gradosRotacion = 0;
+
+function muestra_conv(){
+    var convenciones = document.getElementById('conv');
+
+    convenciones.classList.toggle('cont_conv');
+
+    gradosRotacion += 180; // Puedes ajustar la cantidad de grados que desees
+
+    const rotatingImage = document.getElementById('img_conv');
+    rotatingImage.style.transform = `rotate(${gradosRotacion}deg)`;
+}
