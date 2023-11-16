@@ -60,12 +60,25 @@
             <script type="text/javascript" src="js/map.js"></script>
             <script type = "text/javascript" src="js/mapas_tematicos.js"></script>
             <script type = "text/javascript" src="js/catastro.js"></script>
+            <div class = "cont_ley_oculto" id="leyenda_ap">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
             <div class = "cont_ley_oculto" id="leyenda_ec">
                 <p class = "t_leyenda">Leyenda</p>
             </div>
             <div class = "cont_ley_oculto" id="leyenda_re">
                 <p class = "t_leyenda">Leyenda</p>
             </div>
+            <div class = "cont_ley_oculto" id="leyenda_eh">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
+            <div class = "cont_ley_oculto" id="leyenda_hu">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
+            <div class = "cont_ley_oculto" id="leyenda_pt">
+                <p class = "t_leyenda">Leyenda</p>
+            </div>
+
         </div>
         <div class = "cont_herramientas" id="id_cont_herramientas">
             <button  onclick="muestra_consulta_catastral()" class = "btn_funcion" id = "btn_1">
@@ -88,6 +101,18 @@
                     <p class = "p_titulo_herramienta_oculto" id = "geoservicios">Geoservicios</p>
                     <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
 
+                <div class = "cont_con_oculto" id = "cont_con">
+                    <input type="text" id="in_npn" name="miEntrada" value="Ingresa acá el npn de tu predio">
+                    <button class = "consulta" id = "catastral">Consultar información catastral</button>
+                    <p class = "nombre_consulta" id = "nombre1">Consulta 1:</p>
+                    <p class = "nombre_consulta" id = "nombre2">Consulta 2:</p>
+                    <p class = "nombre_consulta" id = "nombre3">Consulta 3:</p>
+
+                    <p class = "nombre_consulta" id = "salida1">Salida 1.</p>
+                    <p class = "nombre_consulta" id = "salida2">Saldia 2.</p>
+                    <p class = "nombre_consulta" id = "salida3">Salida 3.</p>
+                </div>
+
                 <div class = "cont_mt_oculto" id = "cont_mt">
                     <p class = "p_mapas_tematicos" id = "biodiversidad">Biodiversidad</p>
                     <p class = "p_capa_tematica" id = "p_bio_ap">Áreas protegidas</p>
@@ -101,9 +126,9 @@
                     <button class = "ver_mt" id = "ver_ap" onclick="ver_ap()">Ver/Ocultar</button>
                     <button class = "ver_mt" id = "ver_ec" onclick="ver_ec()">Ver/Ocultar</button>
                     <button class = "ver_mt" id = "ver_re" onclick="ver_re()">Ver/Ocultar</button>
-                    <button class = "ver_mt" id = "ver_h">Ver/Ocultar</button>
-                    <button class = "ver_mt" id = "ver_hi">Ver/Ocultar</button>
-                    <button class = "ver_mt" id = "ver_pt">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_h"  onclick="ver_eh()">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_hi" onclick="ver_hu()">Ver/Ocultar</button>
+                    <button class = "ver_mt" id = "ver_pt" onclick="ver_pt()">Ver/Ocultar</button>
                 </div>
 
                 <div class = "cont_gs_oculto" id = "cont_gs">

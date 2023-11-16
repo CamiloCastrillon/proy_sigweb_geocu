@@ -230,3 +230,34 @@
 .t_gs{
     display: none;
 }
+.nombre_consulta{
+    position: absolute;
+    margin: 0;
+    font-size: 75%;
+    font-family: 'Segoe UI';
+    color: white;
+}
+#nombre1{
+    top: 25%;
+    left: 10%; 
+}
+#nombre2{
+    top: 30%;
+    left: 10%; 
+}
+#nombre3{
+    top: 35%;
+    left: 10%; 
+}
+#salida1{
+    top: 25%;
+    left: 35%; 
+}
+#salida2{
+    top: 30%;
+    left: 35%; 
+}
+#salida3{
+    top: 35%;
+    left: 35%; 
+}

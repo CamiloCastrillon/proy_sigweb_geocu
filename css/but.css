@@ -200,3 +200,24 @@
     top: 83%;
     left: 79%;
 }
+.consulta{
+    top: 12.5%;
+    height: 2vw;
+    width: 80%;
+    max-height: 20px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.consulta:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
