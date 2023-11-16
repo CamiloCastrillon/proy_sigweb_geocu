@@ -61,22 +61,22 @@
     color: #7300BB7A;
 }
 #ver_ap{
-    top: 70%;
+    top: 10%;
 }
 #ver_ec{
-    top: 78%;
+    top: 18%;
 }
 #ver_re{
-    top: 86%;
+    top: 26%;
 }
 #ver_h{
-    top: 100%;
+    top: 40%;
 }
 #ver_hi{
-    top: 108%;
+    top: 48%;
 }
 #ver_pt{
-    top: 116%;
+    top: 56%;
 }
 .cop_gs{
     height: 2vw;
@@ -96,6 +96,27 @@
     background-color: #FFFFFF00;;
 }
 .cop_gs:hover{
+    background-color: white;
+    color: #7300BB7A;
+}
+.cop_md{
+    height: 2vw;
+    width: 5vw;
+    max-height: 20px;
+    max-width: 40px;
+    position: absolute;
+    border: solid 0.5px white;
+    border-radius: 0.2vw;
+    font-family: 'Segoe UI';
+    font-size: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #FFFFFF00;;
+}
+.cop_md:hover{
     background-color: white;
     color: #7300BB7A;
 }
@@ -177,29 +198,5 @@
 }
 #wfs_h{
     top: 83%;
-    left: 79%;
-}
-#wms_us{
-    top: 97%;
-    left: 59%;
-}
-#wfs_us{
-    top: 97%;
-    left: 79%;
-}
-#wms_in{
-    top: 111%;
-    left: 59%;
-}
-#wfs_in{
-    top: 111%;
-    left: 79%;
-}
-#wms_za{
-    top: 117%;
-    left: 59%;
-}
-#wfs_za{
-    top: 117%;
     left: 79%;
 }

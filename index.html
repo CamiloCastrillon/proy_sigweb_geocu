@@ -27,6 +27,12 @@
     <script type = "text/javascript" src="js/cambio_climatico/est_red_h.js"></script>
     <script type = "text/javascript" src="js/cambio_climatico/humedad.js"></script>
     <script type = "text/javascript" src="js/cambio_climatico/piso_termico.js"></script>
+    <script type = "text/javascript" src="js/catastro/construccion.js"></script>
+    <script type = "text/javascript" src="js/catastro/manzana.js"></script>
+    <script type = "text/javascript" src="js/catastro/terreno.js"></script>
+    <script type = "text/javascript" src="js/catastro/vereda.js"></script>
+    <script type = "text/javascript" src="js/muestra_gs.js"></script>
+    <script type = "text/javascript" src="js/muestra_md.js"></script>
 
 </head>
 <body>
@@ -53,6 +59,7 @@
         <div class = "cont_map" id = "map">
             <script type="text/javascript" src="js/map.js"></script>
             <script type = "text/javascript" src="js/mapas_tematicos.js"></script>
+            <script type = "text/javascript" src="js/catastro.js"></script>
             <div class = "cont_ley_oculto" id="leyenda_ec">
                 <p class = "t_leyenda">Leyenda</p>
             </div>
@@ -82,8 +89,6 @@
                     <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
 
                 <div class = "cont_mt_oculto" id = "cont_mt">
-                    <p class = "p_mapas_tematicos" id = "uso_suelo">Uso del suelo</p>
-                    <p class = "p_mapas_tematicos" id = "gestion_riesgo">Gestión de riesgo</p>
                     <p class = "p_mapas_tematicos" id = "biodiversidad">Biodiversidad</p>
                     <p class = "p_capa_tematica" id = "p_bio_ap">Áreas protegidas</p>
                     <p class = "p_capa_tematica" id = "p_bio_ec">Ecosistemas</p>
@@ -105,8 +110,8 @@
                     <p class = "titulo_gs" id="wms">WMS</p>
                     <p class = "titulo_gs" id="wfs">WFS</p>
                     <p class = "subtitulo_gs" id = "cat">Catastro</p>
-                    <p class = "p_gs" id = "zr">Zona rural</p>
-                    <p class = "p_gs" id = "zu">Zona urbana</p>
+                    <p class = "p_gs" id = "zr">Veredas</p>
+                    <p class = "p_gs" id = "zu">Manzanas</p>
                     <p class = "p_gs" id = "ter">Terrenos</p>
                     <p class = "p_gs" id = "con">Construcciones</p>
                     <p class = "subtitulo_gs" id = "bio">Biodiversidad</p>
@@ -117,42 +122,54 @@
                     <p class = "p_gs" id = "eh">Hidroclimatología</p>
                     <p class = "p_gs" id = "pt">Piso térmico</p>
                     <p class = "p_gs" id = "h">Humedad</p>
-                    <p class = "subtitulo_gs" id = "s">Suelo</p>
-                    <p class = "p_gs" id = "us">Uso del suelo</p>
-                    <p class = "subtitulo_gs" id = "gr">Gestión de riesgo</p>
-                    <p class = "p_gs" id = "in">Inundaciones</p>
-                    <p class = "p_gs" id = "za">Amenaza</p>
 
-                    <button class = "cop_gs" id = "wms_zr">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_zr">Copiar</button>
-                    <button class = "cop_gs" id = "wms_zu">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_zu">Copiar</button>
-                    <button class = "cop_gs" id = "wms_ter">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_ter">Copiar</button>
-                    <button class = "cop_gs" id = "wms_con">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_con">Copiar</button>
+                    <button class = "cop_gs" id = "wms_zr" onclick="wms_zr()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_zr" onclick="wfs_zr()">Ver</button>
+                    <button class = "cop_gs" id = "wms_zu" onclick="wms_zu()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_zu" onclick="wfs_zu()">Ver</button>
+                    <button class = "cop_gs" id = "wms_ter" onclick="wms_ter()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_ter" onclick="wfs_ter()">Ver</button>
+                    <button class = "cop_gs" id = "wms_con" onclick="wms_con()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_con" onclick="wfs_con()">Ver</button>
+                    <button class = "cop_gs" id = "wms_re" onclick="wms_re()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_re" onclick="wfs_re()">Ver</button>
+                    <button class = "cop_gs" id = "wms_ap" onclick="wms_ap()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_ap" onclick="wfs_ap()">Ver</button>
+                    <button class = "cop_gs" id = "wms_ec" onclick="wms_ec()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_ec" onclick="wfs_ec()">Ver</button>
+                    <button class = "cop_gs" id = "wms_eh" onclick="wms_eh()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_eh" onclick="wfs_eh()">Ver</button>
+                    <button class = "cop_gs" id = "wms_pt" onclick="wms_pt()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_pt" onclick="wfs_pt()">Ver</button>
+                    <button class = "cop_gs" id = "wms_h" onclick="wms_h()">Ver</button>
+                    <button class = "cop_gs" id = "wfs_h" onclick="wfs_h()">Ver</button>
+                </div>
 
-                    <button class = "cop_gs" id = "wms_re">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_re">Copiar</button>
-                    <button class = "cop_gs" id = "wms_ap">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_ap">Copiar</button>
-                    <button class = "cop_gs" id = "wms_ec">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_ec">Copiar</button>
+                <div class = "cont_md_oculto" id = "cont_md">
+                    <p class = "subtitulo_gs" id = "cat">Catastro</p>
+                    <p class = "p_gs" id = "zr">Veredas</p>
+                    <p class = "p_gs" id = "zu">Manzanas</p>
+                    <p class = "p_gs" id = "ter">Terrenos</p>
+                    <p class = "p_gs" id = "con">Construcciones</p>
+                    <p class = "subtitulo_gs" id = "bio">Biodiversidad</p>
+                    <p class = "p_gs" id = "re">Registro de especies</p>
+                    <p class = "p_gs" id = "ap">Areas protegidas</p>
+                    <p class = "p_gs" id = "ec">Ecosistema</p>
+                    <p class = "subtitulo_gs" id = "cc">Cambio climático</p>
+                    <p class = "p_gs" id = "eh">Hidroclimatología</p>
+                    <p class = "p_gs" id = "pt">Piso térmico</p>
+                    <p class = "p_gs" id = "h">Humedad</p>
 
-                    <button class = "cop_gs" id = "wms_eh">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_eh">Copiar</button>
-                    <button class = "cop_gs" id = "wms_pt">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_pt">Copiar</button>
-                    <button class = "cop_gs" id = "wms_h">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_h">Copiar</button>
-
-                    <button class = "cop_gs" id = "wms_us">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_us">Copiar</button>
-
-                    <button class = "cop_gs" id = "wms_in">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_in">Copiar</button>
-                    <button class = "cop_gs" id = "wms_za">Copiar</button>
-                    <button class = "cop_gs" id = "wfs_za">Copiar</button>
+                    <button class = "cop_md" id = "wms_zr" onclick="md_zr()">Ver</button>
+                    <button class = "cop_md" id = "wms_zu" onclick="md_zu()">Ver</button>
+                    <button class = "cop_md" id = "wms_ter" onclick="md_ter()">Ver</button>
+                    <button class = "cop_md" id = "wms_con" onclick="md_con()">Ver</button>
+                    <button class = "cop_md" id = "wms_re" onclick="md_re()">Ver</button>
+                    <button class = "cop_md" id = "wms_ap" onclick="md_ap()">Ver</button>
+                    <button class = "cop_md" id = "wms_ec" onclick="md_ec()">Ver</button>
+                    <button class = "cop_md" id = "wms_eh" onclick="md_eh()">Ver</button>
+                    <button class = "cop_md" id = "wms_pt" onclick="md_pt()">Ver</button>
+                    <button class = "cop_md" id = "wms_h" onclick="md_h()">Ver</button>
                 </div>
             </div>
         </div>

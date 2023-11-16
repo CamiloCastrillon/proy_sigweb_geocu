@@ -8,6 +8,7 @@ function muestra_consulta_catastral() {
 
     var cont_mt = document.getElementById('cont_mt');
     var cont_gs = document.getElementById('cont_gs');
+    var cont_md = document.getElementById('cont_md');
 
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
     texto2.classList.replace('p_intro', 'texto_intro_oculto');
@@ -18,6 +19,7 @@ function muestra_consulta_catastral() {
 
     cont_mt.classList.replace('cont_mt', 'cont_mt_oculto');
     cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
+    cont_md.classList.replace('cont_md', 'cont_md_oculto');
 }
 
 function muestra_mapas_tematicos() {
@@ -30,6 +32,7 @@ function muestra_mapas_tematicos() {
  
     var cont_mt = document.getElementById('cont_mt');
     var cont_gs = document.getElementById('cont_gs');
+    var cont_md = document.getElementById('cont_md');
     
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
@@ -41,6 +44,7 @@ function muestra_mapas_tematicos() {
 
     cont_mt.classList.replace('cont_mt_oculto', 'cont_mt');
     cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
+    cont_md.classList.replace('cont_md', 'cont_md_oculto');
 }
 
 function muestra_geoservicios() {
@@ -53,6 +57,7 @@ function muestra_geoservicios() {
 
     var cont_mt = document.getElementById('cont_mt');
     var cont_gs = document.getElementById('cont_gs');
+    var cont_md = document.getElementById('cont_md');
 
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
@@ -64,6 +69,7 @@ function muestra_geoservicios() {
 
     cont_mt.classList.replace('cont_mt', 'cont_mt_oculto');
     cont_gs.classList.replace('cont_gs_oculto', 'cont_gs');
+    cont_md.classList.replace('cont_md', 'cont_md_oculto');
 }
 
 function muestra_metadatos() {
@@ -76,6 +82,7 @@ function muestra_metadatos() {
 
     var cont_mt = document.getElementById('cont_mt');
     var cont_gs = document.getElementById('cont_gs');
+    var cont_md = document.getElementById('cont_md');
 
     // Alternar la clase para ocultar o mostrar el texto
     texto1.classList.replace('p_intro', 'texto_intro_oculto');
@@ -87,4 +94,5 @@ function muestra_metadatos() {
 
     cont_mt.classList.replace('cont_mt', 'cont_mt_oculto');
     cont_gs.classList.replace('cont_gs', 'cont_gs_oculto');
+    cont_md.classList.replace('cont_md_oculto', 'cont_md');
 }

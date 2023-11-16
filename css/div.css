@@ -215,4 +215,47 @@
     background-color: white; /* Color del "pulgar" de la barra */
     border-radius: 9px; /* Bordes redondeados del "pulgar" */
 }
-
+.cont_md_oculto{
+    position: absolute;
+    top: 15%;
+    height: 80%;
+    width: 16vw;
+    min-width: 250px;
+    background-color: #FFFFFF00;
+    border-radius: 9px;
+    border: solid 0.5px white;
+    overflow: hidden;
+    transform: translateX(-150%);
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cont_md{
+    position: absolute;
+    top: 15%;
+    height: 80%;
+    width: 16vw;
+    min-width: 250px;
+    background-color: #FFFFFF00;
+    border-radius: 9px;
+    border: solid 0.5px white;
+    overflow: hidden;
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+}
+.cont_md::-webkit-scrollbar-thumb::-webkit-scrollbar-thumb {
+    background-color: #3D0044; /* Color del "pulgar" de la barra */
+    border-radius: 9px; /* Bordes redondeados del "pulgar" */
+}
+.cont_md::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    background-color: white; /* Color del "pulgar" de la barra */
+    border-radius: 9px; /* Bordes redondeados del "pulgar" */
+}
