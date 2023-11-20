@@ -167,8 +167,8 @@
                     <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
 
                 <div class = "cont_con_oculto" id = "cont_con">
-                    <input type="text" id="in_npn" name="miEntrada" value="Ingresa acá el npn de tu predio">
-                    <button class = "consulta" id = "catastral">Consultar información catastral</button>
+                    <input type="text" id="in_npn" name="miEntrada" placeholder="Ingresa acá el npn de tu predio" value="">
+		    <button class = "consulta" onclick="buscarPredio()" id = "catastral">Consultar información catastral</button>
                     <p class = "nombre_consulta" id = "nombre1">Consulta 1:</p>
                     <p class = "nombre_consulta" id = "nombre2">Consulta 2:</p>
                     <p class = "nombre_consulta" id = "nombre3">Consulta 3:</p>
@@ -264,7 +264,7 @@
             </div>
         </div>
     </div>
-    
-
+     <script src="js/consultas/findNpn.js"></script>   
+ 
 </body>
 </html>
