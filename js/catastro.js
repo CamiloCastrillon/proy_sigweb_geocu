@@ -43,8 +43,16 @@ function vereda_style(feature) {
     };
 }
 
+
+
 var ver = L.geoJSON(vereda, {style: vereda_style}).addTo(map);
-var man = L.geoJSON(manzana, manzana_style).addTo(map);
-var con = L.geoJSON(construccion, construccion_style).addTo(map);
-var ter = L.geoJSON(terreno, terreno_style).addTo(map);
+var man = L.geoJSON(manzana,{style: manzana_style}).addTo(map);
+var con = L.geoJSON(construccion,{style:construccion_style}).addTo(map);
+var ter = L.geoJSON(terreno, {
+    style: terreno_style,
+    onEachFeature: function(feature, layer) {
+        // does this feature have a property named popupContent?
+        layer.bindPopup(feature.properties.CODIGO);
+    }
+}).addTo(map);
 

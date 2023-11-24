@@ -19,6 +19,10 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script type = "text/javascript" src="js/slide_tool.js"></script>
     <script type = "text/javascript" src="js/biodiversidad/areas_protegidas.js"></script>
     <script type = "text/javascript" src="js/biodiversidad/ecosistema.js"></script>
@@ -167,15 +171,38 @@
                     <p class = "p_titulo_herramienta_oculto" id = "metadatos">Metadatos</p>
 
                 <div class = "cont_con_oculto" id = "cont_con">
-                    <input type="text" id="in_npn" name="miEntrada" placeholder="Ingresa acá el npn de tu predio" value="">
-		    <button class = "consulta" onclick="buscarPredio()" id = "catastral">Consultar información catastral</button>
-                    <p class = "nombre_consulta" id = "nombre1">Consulta 1:</p>
+                    <input type="text" id="in_npn" name="miEntrada" placeholder="Ingresa acá el npn de tu predio" value="764000001000000010142000000000">
+		            <button class = "consulta" onclick="buscarPredio()" id = "catastral">Consultar información catastral</button>
+                    <!-- <p class = "nombre_consulta" id = "nombre1">Consulta 1:</p>
                     <p class = "nombre_consulta" id = "nombre2">Consulta 2:</p>
                     <p class = "nombre_consulta" id = "nombre3">Consulta 3:</p>
 
                     <p class = "nombre_consulta" id = "salida1">Salida 1.</p>
                     <p class = "nombre_consulta" id = "salida2">Saldia 2.</p>
-                    <p class = "nombre_consulta" id = "salida3">Salida 3.</p>
+                    <p class = "nombre_consulta" id = "salida3">Salida 3.</p> -->
+                    <div style="margin: 5%; width: 100%;">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">VARIABLE</th>
+                                <th scope="col">Valor</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th colspan="2" scope="row">NPN</th>
+                              </tr>
+                              <tr>
+                                <td colspan="2" id="table_consulta_npn"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">AREA</th>
+                                <td id="table_consulta_area"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
                 </div>
 
                 <div class = "cont_mt_oculto" id = "cont_mt">
