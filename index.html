@@ -172,7 +172,9 @@
 
                 <div class = "cont_con_oculto" id = "cont_con">
                     <input type="text" id="in_npn" name="miEntrada" placeholder="Ingresa acá el npn de tu predio" value="764000001000000010142000000000">
+                   
 		            <button class = "consulta" onclick="buscarPredio()" id = "catastral">Consultar información catastral</button>
+                   
                     <!-- <p class = "nombre_consulta" id = "nombre1">Consulta 1:</p>
                     <p class = "nombre_consulta" id = "nombre2">Consulta 2:</p>
                     <p class = "nombre_consulta" id = "nombre3">Consulta 3:</p>
@@ -180,28 +182,60 @@
                     <p class = "nombre_consulta" id = "salida1">Salida 1.</p>
                     <p class = "nombre_consulta" id = "salida2">Saldia 2.</p>
                     <p class = "nombre_consulta" id = "salida3">Salida 3.</p> -->
-                    <div style="margin: 5%; width: 100%;">
-                        <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th scope="col">VARIABLE</th>
-                                <th scope="col">Valor</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th colspan="2" scope="row">NPN</th>
-                              </tr>
-                              <tr>
-                                <td colspan="2" id="table_consulta_npn"></td>
-                              </tr>
-                              <tr>
-                                <th scope="row">AREA</th>
-                                <td id="table_consulta_area"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
+                <div style="margin: 40% 3% 10% 3%; width: 100%; height: 80%; overflow: auto; background-color: #c8aee883; padding: 10px; border-radius: 10px; font-size: 0.8vw;">
+                    <table class="table table-striped">
+                        <thead>
+                            <!-- <tr>
+                            <th scope="col" style="color:aliceblue">VARIABLE</th>
+                            <th scope="col" style="color: aliceblue;">Valor</th>
+                            </tr> -->
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th colspan="2" scope="row" style="color:rgb(255, 255, 255)">NPN</th>
+                            </tr>
+                            <tr>
+                            <td colspan="2" id="table_consulta_npn" style="color:rgb(254, 240, 255)"></td>
+                            </tr>
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >DIRECCIÓN</th>
+                            <td id="table_consulta_direccion" style="color:aliceblue"></td>
+                            </tr>
+                            
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >DESTINACIÓN </th>
+                            <td id="table_consulta_destinacion_economica" style="color:aliceblue"></td>
+                            </tr>
+
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >AREA</th>
+                            <td id="table_consulta_area" style="color:aliceblue"></td>
+                            </tr>
+
+                            <tr>
+                            <th colspan="2" scope="row" style="color:aliceblue">CONSTRUCCIÓN</th>
+                            </tr>
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >IDENTIFICADOR</th>
+                            <td id="table_consulta_identificador" style="color:aliceblue"></td>
+                            </tr>
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >N° PISOS</th>
+                            <td id="table_consulta_numero_pisos" style="color:aliceblue"></td>
+                            </tr>
+                            <tr>
+                            <th scope="row" style="color:aliceblue" >ÁREA CONTRUIDA</th>
+                            <td id="table_consulta_area_construida" style="color:aliceblue"></td>
+                            </tr>
+
+
+
+
+
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
 
                 </div>
 
