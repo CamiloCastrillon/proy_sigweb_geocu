@@ -41,6 +41,16 @@
         transform: translateX(0%);
         transition: transform 0.5s ease;
     }
+    #intro_titulo{
+        top: 10%;
+        font-size: 5vw;
+    }
+    #intro_parrafo{
+        top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3.5vw;
+    }
     .p_mapas_tematicos{
         position: absolute;
         left: 5%;

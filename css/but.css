@@ -39,8 +39,9 @@
 }
 .ver_mt{
     right: 7%;
-    height: 2vw;
-    width: 8vw;
+    height: 1vw;
+    width: 5vw;
+    font-size: 75%;
     position: absolute;
     border: solid 0.5px white;
     border-radius: 0.2vw;
@@ -77,8 +78,8 @@
     top: 56%;
 }
 .cop_gs{
-    height: 2vw;
-    width: 5vw;
+    height: 1vw;
+    width: 3vw;
     position: absolute;
     border: solid 0.5px white;
     border-radius: 0.2vw;
