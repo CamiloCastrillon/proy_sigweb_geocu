@@ -1,0 +1,100 @@
+@media screen and (max-width: 1440px) {
+    .btn_funcion{
+        position: absolute;
+        width: 10vw;
+        min-width: 40px;
+        height: 10vw;
+        min-height: 40px;
+        border-radius: 9px;
+        border: solid 1px #FFFFFF00;
+        overflow: hidden;
+        background-color: #FFFFFF00;
+        transition: 0.3s
+    }
+    .btn_funcion:hover{
+        background-color: #7300BB7A;
+    }
+    .btn_funcion img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn_funcion img:hover{
+        width: 80%;
+        height: 80%;
+    }
+    #btn_1{
+        top: 2%;
+        left: 12.5vw;
+    }
+    #btn_2{
+        top: 2%;
+        left: 22.5vw;
+    }
+    #btn_3{
+        top: 2%;
+        left: 32.5vw;
+    }
+    #btn_4{
+        top: 2%;
+        left: 42.5vw;
+    }
+    .ver_conv{
+        position: absolute;
+        width: 2vw;
+        min-width: 20px;
+        height: 2vw;
+        min-height: 20px;
+        left: 0.5vw;
+        bottom: 35vw;
+        background-color: white;
+        border-radius: 6px;
+        border: 0px;
+        box-shadow: 0px 0px 2px 1px #7300BB7A;
+        z-index: 20000;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+    }
+    .ver_conv:hover{
+        background-color: #7300BB7A;
+    }
+    .ver_conv img{
+        width: 100%;
+        height: 80%;
+    }
+    .ver_mt{
+        right: 7%;
+        height: 2vw;
+        width: 7.5vw;
+        position: absolute;
+        border: solid 0.5px white;
+        border-radius: 0.2vw;
+        font-family: 'Segoe UI';
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #FFFFFF00;;
+        transform: translateX(0%);
+        transition: transform 0.5s ease;
+    }
+    .cop_gs{
+        height: 2vw;
+        width: 5vw;
+        position: absolute;
+        border: solid 0.5px white;
+        border-radius: 0.2vw;
+        font-family: 'Segoe UI';
+        font-size: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-color: #FFFFFF00;;
+    }
+}

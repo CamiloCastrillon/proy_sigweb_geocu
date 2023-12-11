@@ -1,0 +1,83 @@
+@media screen and (max-width: 1440px) {
+    .t_leyenda{
+        position: absolute;
+        font-size: 100%;
+        top: 0;
+        margin: 0;
+        font-family: 'Segoe UI';
+        color: #3D0044;
+    }
+    .t_conv{
+        position: absolute;
+        font-size: 100%;
+        top: 0;
+        margin: 0;
+        font-family: 'Segoe UI';
+        color: #3D0044;
+    }
+    .td_conv{
+        position: absolute;
+        font-size: 75%;
+        top: 0;
+        margin: 0;
+        font-family: 'Segoe UI';
+        color: #3D0044;
+    }
+    .p_titulo_herramienta_oculto{
+        position: absolute;
+        top: 2%;
+        font-family: 'Segoe UI';
+        font-size: 3vw;
+        color: white;
+        transform: translateX(-1000%);
+        transition: transform 0.5s ease;
+    }
+    .p_titulo_herramienta{
+        position: absolute;
+        top: 2%;
+        font-family: 'Segoe UI';
+        font-size: 3vw;
+        color: white;
+        transform: translateX(0%);
+        transition: transform 0.5s ease;
+    }
+    .p_mapas_tematicos{
+        position: absolute;
+        left: 5%;
+        font-size: 2vw;
+        text-align: left;
+        font-family: 'Segoe UI';
+        color: white;
+        transform: translateX(0%);
+        transition: transform 0.5s ease;
+    }
+    .p_capa_tematica{
+        position: absolute;
+        margin: 0;
+        font-size: 1.5vw;
+        font-family: 'Segoe UI';
+        color: white;
+    }
+    .titulo_gs{
+        position: absolute;
+        font-size: 3vw;
+        top: 0;
+        margin: 0;
+        font-family: 'Segoe UI';
+        color: white;
+    }
+    .subtitulo_gs{
+        position: absolute;
+        margin: 0;
+        font-size: 2vw;
+        font-family: 'Segoe UI';
+        color: white;   
+    }
+    .p_gs{
+        position: absolute;
+        margin: 0;
+        font-size: 1.5vw;
+        font-family: 'Segoe UI';
+        color: white;
+    }
+}

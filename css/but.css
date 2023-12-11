@@ -40,9 +40,7 @@
 .ver_mt{
     right: 7%;
     height: 2vw;
-    max-height: 20px;
     width: 8vw;
-    max-width: 80px;
     position: absolute;
     border: solid 0.5px white;
     border-radius: 0.2vw;
@@ -81,8 +79,6 @@
 .cop_gs{
     height: 2vw;
     width: 5vw;
-    max-height: 20px;
-    max-width: 40px;
     position: absolute;
     border: solid 0.5px white;
     border-radius: 0.2vw;
@@ -93,7 +89,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    background-color: #FFFFFF00;;
+    background-color: #FFFFFF00;
 }
 .cop_gs:hover{
     background-color: white;
