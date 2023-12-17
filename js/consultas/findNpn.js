@@ -5,8 +5,8 @@ const buscarPredio = () => {
     }else if(npn.length !== 30){
         alert('El numero suministrado debe ser de 30 digitos')
     }else{
-        //const url = `http://44.214.39.85:8100/geovisor/geojson/${npn}`
-        const url = `http://localhost:8100/geovisor/geojson/${npn}`
+        const url = `http://44.214.39.85:8100/geovisor/geojson/${npn}`
+        //const url = `http://localhost:8100/geovisor/geojson/${npn}`
         fetch(url)
         .then(response => response.json()) 
         .then(json => {
